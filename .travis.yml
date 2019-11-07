@@ -1,6 +1,6 @@
 os:
-  - linux
-  #- osx
+  #- linux
+  - osx
   #- windows
 jobs:
   include:  # https://docs.travis-ci.com/user/languages
@@ -14,18 +14,18 @@ jobs:
     - language: dart
     - language: elixir
     - language: elm
-    - language: erlang
-    - language: generic
+    - language: erlang       # Linux: FAILS
+    - language: generic      # Linux: no language set
     - language: go
-    - language: groovy
+    - language: groovy       # Linux: no language set
     - language: haskell
     - language: haxe
     - language: java
     - language: julia
-    - language: minimal
+    - language: minimal      # Linux: no language set
     - language: nix
-    - language: nodejs
-    - language: objective-c
+    - language: nodejs       # Linux: no language set
+    - language: objective-c  # Linux: no language set
     - language: perl
     - language: perl6
     - language: php

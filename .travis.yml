@@ -2,40 +2,39 @@ os:
   - linux
   #- osx
   #- windows
-# jobs:
-language:  # https://docs.travis-ci.com/user/languages
-  - android
-  - c
-  - csharp
-  - cpp
-  - clojure
-  - crystal
-  - d
-  - dart
-  - elixir
-  - elm
-  - erlang
-  - generic
-  - go
-  - groovy
-  - haskell
-  - haxe
-  - java
-  - julia
-  - minimal
-  - nix
-  - nodejs
-  - objective-c
-  - perl
-  - perl6
-  - php
-  - python
-  - r
-  - ruby
-  - rust
-  - scala
-  - smalltalk
-  - swift
+jobs:  # https://docs.travis-ci.com/user/languages
+  - language: android
+  - language: c
+  - language: csharp
+  - language: cpp
+  - language: clojure
+  - language: crystal
+  - language: d
+  - language: dart
+  - language: elixir
+  - language: elm
+  - language: erlang
+  - language: generic
+  - language: go
+  - language: groovy
+  - language: haskell
+  - language: haxe
+  - language: java
+  - language: julia
+  - language: minimal
+  - language: nix
+  - language: nodejs
+  - language: objective-c
+  - language: perl
+  - language: perl6
+  - language: php
+  - language: python
+  - language: r
+  - language: ruby
+  - language: rust
+  - language: scala
+  - language: smalltalk
+  # - language: swift == objective-c
 
 install: true
 script:

@@ -1,4 +1,8 @@
-# Travis-CI-languages-by-operating-system
+# Travis CI: languages by operating system
+
+Try running each of the languages on each of the operating systems
+
+[`.travis.yml`](.travis.yml)
 ```yaml
 os:
   - linux
@@ -7,6 +11,7 @@ os:
 jobs:
   include:  # https://docs.travis-ci.com/user/languages
     - language: android  # ...
+
 ```
 | language:    | os: linux       | os: osx         | os: windows     |
 | ------------ | --------------- | --------------- | --------------- |
@@ -42,6 +47,7 @@ jobs:
 | scala        |                 |                 | FAILS           |
 | smalltalk    |                 |                 | NEVER STARTS    |
 
+To convert the comments in the [.travis.yml](.travis.yml) file into this markdown table, run:
 ```python
 with open(".travis.yml") as in_file:
     print("\n".join(line.rstrip().replace("# ", "").replace("- language: ", "| ")

@@ -1,7 +1,7 @@
 os:
   #- linux
-  - osx
-  #- windows
+  #- osx
+  - windows
 jobs:
   include:  # https://docs.travis-ci.com/user/languages
     - language: android
@@ -12,30 +12,30 @@ jobs:
     - language: crystal
     - language: d
     - language: dart
-    - language: elixir
+    - language: elixir       #                         osx: FAILS
     - language: elm
-    - language: erlang       # Linux: FAILS
-    - language: generic      # Linux: no language set
+    - language: erlang       # linux: FAILS,           osx: FAILS
+    - language: generic      # linux: no language set, osx: no language set, 
     - language: go
-    - language: groovy       # Linux: no language set
-    - language: haskell
+    - language: groovy       # linux: no language set, osx: no language set, 
+    - language: haskell      #                         osx: FAILS
     - language: haxe
     - language: java
     - language: julia
-    - language: minimal      # Linux: no language set
+    - language: minimal      # linux: no language set, osx: no language set, 
     - language: nix
-    - language: nodejs       # Linux: no language set
-    - language: objective-c  # Linux: no language set
+    - language: nodejs       # linux: no language set, osx: no language set, 
+    - language: objective-c  # linux: no language set, osx: no language set, 
     - language: perl
     - language: perl6
-    - language: php
-    - language: python
+    - language: php          #                         osx: FAILS
+    - language: python       #                         osx: FAILS
     - language: r
     - language: ruby
     - language: rust
     - language: scala
     - language: smalltalk
-    # - language: swift == objective-c
+    #- language: swift == objective-c
 
 install: true
 script:
@@ -49,4 +49,5 @@ script:
   - pyenv whence python3     || true
   - pyenv whence pip         || true
   - pyenv versions           || true
+  - pyenv install --list     || true
   

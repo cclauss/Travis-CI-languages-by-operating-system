@@ -7,36 +7,36 @@ os:
 jobs:
   include:  # https://docs.travis-ci.com/user/languages
   
-| language:                  | os: linux              | os: osx              | os: windows           |
-| ---                        | ---                    | ---                  | ---                   |
-|   - language: android      |                        |                      | windows: NEVER STARTS |
-|   - language: c            |                        |                      |                       |
-|   - language: csharp       |                        |                      | windows: FAILS        |
-|   - language: cpp          |                        |                      |                       |
-|   - language: clojure      |                        |                      | windows: NEVER STARTS |
-|   - language: crystal      |                        |                      | windows: FAILS        |
-|   - language: d            |                        |                      | windows: FAILS        |
-|   - language: dart         |                        |                      |                       |
-|   - language: elixir       |                        | osx: FAILS           | windows: FAILS        |
-|   - language: elm          |                        |                      | windows: NEVER STARTS |
-|   - language: erlang       | linux: FAILS           | osx: FAILS           | windows: FAILS        |
-|   - language: generic      | linux: no language set | osx: no language set | windows: FAILS        |
-|   - language: go           |                        |                      |                       |
-|   - language: groovy       | linux: no language set | osx: no language set | windows: FAILS        |
-|   - language: haskell      |                        | osx: FAILS           | windows: FAILS        |
-|   - language: haxe         |                        |                      | windows: FAILS        |
-|   - language: java         |                        |                      | windows: FAILS        |
-|   - language: julia        |                        |                      |                       |
-|   - language: minimal      | linux: no language set | osx: no language set | windows: NEVER STARTS |
-|   - language: nix          |                        |                      | windows: NEVER STARTS |
-|   - language: nodejs       | linux: no language set | osx: no language set | windows: NEVER STARTS |
-|   - language: objective-c  | linux: no language set | osx: no language set |                       |
-|   - language: perl         |                        |                      | windows: FAILS        |
-|   - language: perl6        |                        |                      |                       |
-|   - language: php          |                        | osx: FAILS           | windows: FAILS        |
-|   - language: python       |                        | osx: FAILS           | windows: FAILS        |
-|   - language: r            |                        |                      | windows: FAILS        |
-|   - language: ruby         |                        |                      | windows: FAILS        |
-|   - language: rust         |                        |                      |                       |
-|   - language: scala        |                        |                      | windows: FAILS        |
-|   - language: smalltalk    |                        |                      | windows: NEVER STARTS |
+| language:                    | os: linux       | os: osx         | os: windows     |
+| ---------------------------- | --------------- | --------------- | --------------- |
+|   - language: android      # |                 |                 | NEVER STARTS    |
+|   - language: c            # |                 |                 |                 |
+|   - language: csharp       # |                 |                 | FAILS           |
+|   - language: cpp          # |                 |                 |                 |
+|   - language: clojure      # |                 |                 | NEVER STARTS    |
+|   - language: crystal      # |                 |                 | FAILS           |
+|   - language: d            # |                 |                 | FAILS           |
+|   - language: dart         # |                 |                 |                 |
+|   - language: elixir       # |                 | FAILS           | FAILS           |
+|   - language: elm          # |                 |                 | NEVER STARTS    |
+|   - language: erlang       # | FAILS           | FAILS           | FAILS           |
+|   - language: generic      # | no language set | no language set | FAILS           |
+|   - language: go           # |                 |                 |                 |
+|   - language: groovy       # | no language set | no language set | FAILS           |
+|   - language: haskell      # |                 | FAILS           | FAILS           |
+|   - language: haxe         # |                 |                 | FAILS           |
+|   - language: java         # |                 |                 | FAILS           |
+|   - language: julia        # |                 |                 |                 |
+|   - language: minimal      # | no language set | no language set | NEVER STARTS    |
+|   - language: nix          # |                 |                 | NEVER STARTS    |
+|   - language: nodejs       # | no language set | no language set | NEVER STARTS    |
+|   - language: objective-c  # | no language set | no language set | no language set |
+|   - language: perl         # |                 |                 | FAILS           |
+|   - language: perl6        # |                 |                 |                 |
+|   - language: php          # |                 | FAILS           | FAILS           |
+|   - language: python       # |                 | FAILS           | FAILS           |
+|   - language: r            # |                 |                 | FAILS           |
+|   - language: ruby         # |                 |                 | FAILS           |
+|   - language: rust         # |                 |                 |                 |
+|   - language: scala        # |                 |                 | FAILS           |
+|   - language: smalltalk    # |                 |                 | NEVER STARTS    |

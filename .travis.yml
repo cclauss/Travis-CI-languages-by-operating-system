@@ -26,7 +26,7 @@ jobs:
     - language: julia        # |                 |                 |                 |
     - language: minimal      # | no language set | no language set | NEVER STARTS    |
     - language: nix          # |                 |                 | NEVER STARTS    |
-    - language: nodejs       # | no language set | no language set | NEVER STARTS    |
+    - language: node_js      # |                 |                 |                 |
     - language: objective-c  # | no language set | no language set | no language set |
     - language: perl         # |                 |                 | FAILS           |
     - language: perl6        # |                 |                 |                 |

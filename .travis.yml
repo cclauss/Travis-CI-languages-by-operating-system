@@ -4,39 +4,39 @@ os:
   #- windows
 jobs:
   include:  # https://docs.travis-ci.com/user/languages
-    # | language:    | os: linux       | os: osx         | os: windows     |
-    # | ------------ | --------------- | --------------- | --------------- |
-    - language: android      # |                 |                 | NEVER STARTS    |
-    - language: c            # |                 |                 |                 |
-    - language: csharp       # |                 |                 | FAILS           |
-    - language: cpp          # |                 |                 |                 |
-    - language: clojure      # |                 |                 | NEVER STARTS    |
-    - language: crystal      # |                 |                 | FAILS           |
-    - language: d            # |                 |                 | FAILS           |
-    - language: dart         # |                 |                 |                 |
-    - language: elixir       # |                 | FAILS           | FAILS           |
-    - language: elm          # |                 |                 | NEVER STARTS    |
-    - language: erlang       # | FAILS           | FAILS           | FAILS           |
-    - language: generic      # | no language set | no language set | FAILS           |
-    - language: go           # |                 |                 |                 |
-    - language: groovy       # | no language set | no language set | FAILS           |
-    - language: haskell      # |                 | FAILS           | FAILS           |
-    - language: haxe         # |                 |                 | FAILS           |
-    - language: java         # |                 |                 | FAILS           |
-    - language: julia        # |                 |                 |                 |
-    - language: minimal      # | no language set | no language set | NEVER STARTS    |
-    - language: nix          # |                 |                 | NEVER STARTS    |
-    - language: node_js      # |                 |                 |                 |
-    - language: objective-c  # | no language set | no language set | no language set |
-    - language: perl         # |                 |                 | FAILS           |
-    - language: perl6        # |                 |                 |                 |
-    - language: php          # |                 | FAILS           | FAILS           |
-    - language: python       # |                 | FAILS           | FAILS           |
-    - language: r            # |                 |                 | FAILS           |
-    - language: ruby         # |                 |                 | FAILS           |
-    - language: rust         # |                 |                 |                 |
-    - language: scala        # |                 |                 | FAILS           |
-    - language: smalltalk    # |                 |                 | NEVER STARTS    |
+    # | language:    | os: linux       | os: osx         | os: windows     | linux: python3 --version  |
+    # | ------------ | --------------- | --------------- | --------------- |                           |
+    - language: android      # |                 |                 | NEVER STARTS    | Python 3.4.3 with no pip3 |
+    - language: c            # |                 |                 |                 | Python 3.5.2 with no pip3 |
+    - language: csharp       # |                 |                 | FAILS           | Python 3.5.2 with no pip3 |
+    - language: cpp          # |                 |                 |                 | Python 3.5.2 with no pip3 |
+    - language: clojure      # |                 |                 | NEVER STARTS    | Python 3.5.2 with no pip3 |
+    - language: crystal      # |                 |                 | FAILS           | Python 3.5.2 with no pip3 |
+    - language: d            # |                 |                 | FAILS           | Python 3.5.2 with no pip3 |
+    - language: dart         # |                 |                 |                 | Python 3.5.2 with no pip3 |
+    - language: elixir       # |                 | FAILS           | FAILS           | Python 3.5.2 with no pip3 |
+    - language: elm          # |                 |                 | NEVER STARTS    | Python 3.4.3 with no pip3 |
+    - language: erlang       # | FAILS           | FAILS           | FAILS           |                           |
+    - language: generic      # | no language set | no language set | FAILS           | Python 3.5.2 with no pip3 |
+    - language: go           # |                 |                 |                 | Python 3.5.2 with no pip3 |
+    - language: groovy       # | no language set | no language set | FAILS           | Python 3.5.2 with no pip3 |
+    - language: haskell      # |                 | FAILS           | FAILS           | Python 3.5.2 with no pip3 |
+    - language: haxe         # |                 |                 | FAILS           | Python 3.5.2 with no pip3 |
+    - language: java         # |                 |                 | FAILS           | Python 3.5.2 with no pip3 |
+    - language: julia        # |                 |                 |                 | Python 3.5.2 with no pip3 |
+    - language: minimal      # | no language set | no language set | NEVER STARTS    | Python 3.5.2 with no pip3 |
+    - language: nix          # |                 |                 | NEVER STARTS    | Python 3.5.2 with no pip3 |
+    - language: node_js      # |                 |                 |                 | Python 3. with no pip3    |
+    - language: objective-c  # | Runs on macOS!! | no language set | no language set | Python 3.6.5, pip3 10.0.1 |
+    - language: perl         # |                 |                 | FAILS           | Python 3.5.2 with no pip3 |
+    - language: perl6        # |                 |                 |                 | Python 3.5.2 with no pip3 |
+    - language: php          # |                 | FAILS           | FAILS           | Python 3.5.2 with no pip3 |
+    - language: python       # |                 | FAILS           | FAILS           | language: python: 3.8 pip |
+    - language: r            # |                 |                 | FAILS           | Python 3.5.2 with no pip3 |
+    - language: ruby         # |                 |                 | FAILS           | Python 3.5.2 with no pip3 |
+    - language: rust         # |                 |                 |                 | Python 3.5.2 with no pip3 |
+    - language: scala        # |                 |                 | FAILS           | Python 3.5.2 with no pip3 |
+    - language: smalltalk    # |                 |                 | NEVER STARTS    | Python 3.4.3 with no pip3 |
 
 install: true
 script:

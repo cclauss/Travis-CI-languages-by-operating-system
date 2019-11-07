@@ -35,7 +35,7 @@ jobs:
     | julia        |                 |                 |                 | Python 3.5.2 with no pip3 |
     | minimal      | no language set | no language set | NEVER STARTS    | Python 3.5.2 with no pip3 |
     | nix          |                 |                 | NEVER STARTS    | Python 3.5.2 with no pip3 |
-    | node_js      |                 |                 |                 | Python 3. with no pip3    |
+    | node_js      |                 |                 |                 | Python 3.5.2 with no pip3 |
     | objective-c  | Runs on macOS!! | no language set | no language set | Python 3.6.5, pip3 10.0.1 |
     | perl         |                 |                 | FAILS           | Python 3.5.2 with no pip3 |
     | perl6        |                 |                 |                 | Python 3.5.2 with no pip3 |

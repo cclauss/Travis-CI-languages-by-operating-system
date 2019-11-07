@@ -6,6 +6,7 @@ os:
   #- windows
 jobs:
   include:  # https://docs.travis-ci.com/user/languages
+    - language: android  # ...
 ```
 | language:    | os: linux       | os: osx         | os: windows     |
 | ------------ | --------------- | --------------- | --------------- |

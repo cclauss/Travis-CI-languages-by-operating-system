@@ -1,7 +1,7 @@
 os:
   - linux
-  #- osx
-  #- windows
+  - osx
+  - windows
 jobs:
   include:  # https://docs.travis-ci.com/user/languages
     # | language:    | os: linux       | os: osx         | os: windows     |

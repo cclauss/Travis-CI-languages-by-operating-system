@@ -19,19 +19,19 @@ jobs:
 |   - language: dart         |                        |                      |                       |
 |   - language: elixir       |                        | osx: FAILS           | windows: FAILS        |
 |   - language: elm          |                        |                      | windows: NEVER STARTS |
-|   - language: erlang       | linux: FAILS,          | osx: FAILS           | windows: FAILS        |
+|   - language: erlang       | linux: FAILS           | osx: FAILS           | windows: FAILS        |
 |   - language: generic      | linux: no language set | osx: no language set | windows: FAILS        |
 |   - language: go           |                        |                      |                       |
 |   - language: groovy       | linux: no language set | osx: no language set | windows: FAILS        |
-|   - language: haskell      |                        | osx: FAILS,          | windows: FAILS        |
+|   - language: haskell      |                        | osx: FAILS           | windows: FAILS        |
 |   - language: haxe         |                        |                      | windows: FAILS        |
 |   - language: java         |                        |                      | windows: FAILS        |
 |   - language: julia        |                        |                      |                       |
 |   - language: minimal      | linux: no language set | osx: no language set | windows: NEVER STARTS |
-|   - language: nix          |                                               | windows: NEVER STARTS |
+|   - language: nix          |                        |                      | windows: NEVER STARTS |
 |   - language: nodejs       | linux: no language set | osx: no language set | windows: NEVER STARTS |
 |   - language: objective-c  | linux: no language set | osx: no language set |                       |
-|   - language: perl         |                                               | windows: FAILS        |
+|   - language: perl         |                        |                      | windows: FAILS        |
 |   - language: perl6        |                        |                      |                       |
 |   - language: php          |                        | osx: FAILS           | windows: FAILS        |
 |   - language: python       |                        | osx: FAILS           | windows: FAILS        |
